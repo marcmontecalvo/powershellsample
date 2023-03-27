@@ -1,1 +1,1 @@
-Test-Path -Path %systemroot%\System32\Cleanmgr.exe
+Test-Path -Path C:\test\my.ini
