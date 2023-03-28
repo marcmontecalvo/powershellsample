@@ -1,4 +1,5 @@
-"Site1" =  "Key1"
-"Site2" =  "Key2"
-"Site3" =  "Key3"
-"Main Office" =  "Key4"
+name,value
+"Site1","Key1"
+"Site2","Key2"
+"Site3","Key3"
+"Main Office","Key4"
