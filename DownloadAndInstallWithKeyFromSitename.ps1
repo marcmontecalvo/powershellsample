@@ -2,7 +2,7 @@ $Details = (Get-ItemProperty -Path Registry::HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432
 $sitename = $Details.sitename
 $url = '@url@'
 $filename = '@filename@'
-$Path = "C:\Windows\Temp\" + [guid]::NewGuid() + $filename
+$Path = "C:\Windows\Temp\" + [guid]::NewGuid() + "\" + $filename
 
 $allKeys = @{
     	'Site1' =  'Key1'
