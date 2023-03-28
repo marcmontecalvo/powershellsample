@@ -1,7 +1,7 @@
 $Details = (Get-ItemProperty -Path Registry::HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\SAAZOD)
 $sitename = $Details.sitename
-$url = '@url@'
-$filename = '@filename@'
+$url = @url@
+$filename = @filename@
 $Path = "C:\Windows\Temp\" + [guid]::NewGuid() + "\" + $filename
 
 $allKeys = @{
