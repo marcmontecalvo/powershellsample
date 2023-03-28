@@ -20,8 +20,8 @@ else {
     write-host "The url to use is: $url" -ForegroundColor Green
     write-host "The key to use is:"$sitekey
     write-host This is where you would do your install command using the key.
-   
-    $wc = New-Object System.Net.WebClient
-    $wc.DownloadFile($url, ( New-Item -Path $Path -Force ))
+    Invoke-WebRequest -URI $URL -OutFile ( New-Item -Path $Path -Force )
+   # $wc = New-Object System.Net.WebClient
+   # $wc.DownloadFile($url, ( New-Item -Path $Path -Force ))
     Start-Process -Filepath $Path #and add your key and args
 }
